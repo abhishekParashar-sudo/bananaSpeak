@@ -1,3 +1,9 @@
-var h = prompt("what is username")
+var translateBtn = document.querySelector("#translateBtn")
+var txtInput = document.querySelector("#textArea")
 
-alert("this is alert"+h)
+function EventHandler(){
+    console.log("clicked")
+console.log("input",txtInput.value)
+}
+
+translateBtn.addEventListener("click",EventHandler)
