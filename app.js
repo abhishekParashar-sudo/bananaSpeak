@@ -1,9 +1,12 @@
 var translateBtn = document.querySelector("#translateBtn")
 var txtInput = document.querySelector("#textArea")
+var output = document.querySelector("#textArea2")
+
 
 function EventHandler(){
-    console.log("clicked")
-console.log("input",txtInput.value)
+output.innerText="it is " + txtInput.value
+
 }
 
 translateBtn.addEventListener("click",EventHandler)
+
